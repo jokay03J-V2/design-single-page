@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "plus-jakarta-bold";
+  src: url(./assets/fonts/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "plus-jakarta-medium";
+  src: url(./assets/fonts/PlusJakartaSans-Medium.ttf);
+}
+
+:root {
+
+  /* headings */
+  --heading-1-font-family: "plus-jakarta-bold";
+  --heading-1-font-size: 56px;
+  --heading-1-line-height: 70px;
+  --heading-1-weight: bold;
+
+  --heading-2-font-family: "plus-jakarta-bold";
+  --heading-2-font-size: 40px;
+  --heading-2-line-height: 51px;
+  --heading-2-weight: bold;
+
+  --heading-3-font-family: "plus-jakarta-bold";
+  --heading-3-font-size: 32px;
+  --heading-3-line-height: 40px;
+  --heaing-3-weight: bold;
+
+  --body-font-family: "plus-jakarta-medium";
+  --body-font-size: 18px;
+  --body-line-height: 28px;
+  --body-weight: medium;
+
+  /* colors */
+  --light-cream: #FFF7F0;
+  --medium-brown: #7A746E;
+  --black: #030303;
+  --purple: #552049;
+  --cyan: #61C4B7;
+  --light-red: #EB7565;
+  --pink: #F39E9E;
+  --summer-yellow: #F6A560;
+  --galactic-blue: #755CDE;
+
+  /* buttons */
+  --button-border: 28px;
+}
+
+/* css reseter */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-cream);
+}
+
+/* navbar */
+
+.navbar__container {
+  padding: 16px 16px 0px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+
+.navbar__items {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__item {
+  height: fit-content;
+  width: fit-content;
+}
+
+.navbar__icon {
+  height: 48px;
+  width: 48px;
+}
+
+/* header */
+
+.header__title {
+  margin-top: 32px;
+  width: 100%;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  font-family: var(--heading-1-font-family), sans-serif;
+  line-height: 45px;
+  font-weight: var(--heading-1-weight);
+  font-size: 36px;
+}
+
+.header__title::first-letter {
+  text-transform: uppercase;
+}
+
+.header__subtitle {
+  width: 100%;
+  text-align: center;
+  padding: 0px 45px 0px 45px;
+  font-family: var(--body-font-family), sans-serif;
+  font-weight: var(--body-weight);
+  line-height: var(--body-line-height);
+  color: var(--medium-brown);
+  margin: 16px 0px 35px 0px;
+}
+
+.header__subtitle::first-letter {
+  text-transform: uppercase;
+}
+
+/* cards */
+.cards__container {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(7, 1fr) 20px;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: #030303;
+}
+
+/* ui */
+.ui__button_black {
+  border-radius: var(--button-border);
+  background-color: var(--black);
+  color: white;
+  border: none;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "plus-jakarta-bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ui__button_black::first-letter {
+  text-transform: uppercase;
+}
+
+.ui__link {
+  color: inherit;
+  text-decoration: none;
+}
