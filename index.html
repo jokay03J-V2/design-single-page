@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" >
     <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" >
@@ -17,19 +17,37 @@
     <header>  
       <h1 class="header__title">design solutions made easy</h1>
       <p class="header__subtitle">
-        with over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
+        with over ten years of experience in various design disciplines, I'm your one-stop shop for your design needs.
       </p>
     </header>
     <main>
       <div class="cards__container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <article class="cards__card" id="design"><h2 class="cards__card__title">graphic design</h2></article>
+        <article class="cards__card" id="ui_ux"><h2 class="cards__card__title">ui/ux</h2></article>
+        <article class="cards__card" id="apps"><h2 class="cards__card__title">apps</h2></article>
+        <article class="cards__card" id="illustrations"><h2 class="cards__card__title">illustrations</h2></article>
+        <article class="cards__card" id="photography"><h2 class="cards__card__title">photography</h2></article>
+        <article class="cards__card" id="motion_graphics"><h2 class="cards__card__title">motion graphics</h2></article>
       </div>
+      <img src="./assets/image-amy.webp" alt="avatar" class="avatar__img">
+      <h2 class="welcome__title">i’m Amy, and I’d love to work on your next project</h2>
+      <p class="welcome__paragraph">i love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+      <a href="#" class="ui__button_light_red">free consultation</a>
+      <h2 class="work__title">my work</h2>
+      <div class="carrousel__container">
+        <img src="./assets/image-slide-1.jpg" alt="image 1" id="carrousel__item1" class="carrousel__item carrousel__item_hidden">
+        <img src="./assets/image-slide-2.jpg" alt="image 2" id="carrousel__item2" class="carrousel__item">
+        <img src="./assets/image-slide-3.jpg" alt="image 3" id="carrousel__item3" class="carrousel__item carrousel__item_hidden">
+      </div>
+      <div class="carrousel__controls">
+        <button class="ui__small_button_black" id="carrousel__arrow_right"></button>
+        <button class="ui__small_button_black" id="carrousel__arrow_left"></button>
+      </div>
+      <article class="callme__container">
+        <h3 class="callme__title">book call with me</h3>
+        <p class="callme__paragraph">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+        <button class="ui__button_light_red">free consultation</button>
+      </article>
     </main>
     <script type="module" src="/main.js"></script>
   </body>
