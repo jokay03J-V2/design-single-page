@@ -262,6 +262,7 @@ main {
   width: fit-content;
   height: fit-content;
   overflow: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth;
   display: flex;
   gap: 25px;
@@ -271,15 +272,14 @@ main {
 }
 
 .carrousel__item {
-  width: 100%;
-  height: auto;
+  width: 0px;
+  height: 40vh;
   border-radius: 10px;
   transition: all ease 0.5s;
-  /* transform: scale(1); */
-  /* scroll-snap-align: start; */
-  /* flex-shrink: 0; */
-  /* transform-origin: center center; */
-  transition: transform 0.5s;
+}
+
+.carrousel__item_active {
+  width: auto;
 }
 
 #carrousel__item1 {
