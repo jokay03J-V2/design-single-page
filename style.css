@@ -276,7 +276,7 @@ main {
   width: 0px;
   height: 40vh;
   border-radius: 10px;
-  transition: all ease 0.5s;
+  transition: all ease 0.4s;
   aspect-ratio: 16/9;
 }
 
