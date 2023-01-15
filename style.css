@@ -248,20 +248,22 @@ main {
 .carousel__container {
   width: 100%;
   height: fit-content;
-  display: flex;
   padding: 0% 5%;
   margin-top: 9%;
+  overflow: hidden;
+}
+
+.carousel__imgs {
+  display: flex;
+  transition: all ease 1s;
+  gap: 15px;
 }
 
 .carousel__item {
-  width: 0px;
+  width: 100%;
   border-radius: 10px;
   transition: all ease 0.4s;
   aspect-ratio: 16/9;
-}
-
-.carousel__item_active {
-  width: 100%;
 }
 
 .carousel__controls {
@@ -332,7 +334,7 @@ main {
 
 /* ui */
 .ui__button_black {
-  transition: all ease .5s;
+  transition: all ease 0.5s;
   border-radius: var(--button-border);
   background-color: var(--black);
   color: white;
@@ -349,7 +351,7 @@ main {
 }
 
 .ui__small_button_black {
-  transition: all ease .5s;
+  transition: all ease 0.5s;
   border-radius: 50%;
   background-color: var(--black);
   color: white;
@@ -363,7 +365,7 @@ main {
 }
 
 .ui__button_light_red {
-  transition: all ease .5s;
+  transition: all ease 0.5s;
   border-radius: var(--button-border);
   background-color: var(--light-red);
   color: white;
@@ -452,7 +454,7 @@ main {
     grid-area: 1 / 1 / 4 / 2;
     height: auto;
     width: 90%;
-    justify-items:end;
+    justify-items: end;
     transform: translate(-20%, -15%);
     margin-top: 15%;
   }
@@ -498,7 +500,6 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
-
   .header {
     display: flex;
     flex-direction: column;
@@ -519,7 +520,7 @@ main {
 
   .cards__container {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);    
+    grid-template-rows: repeat(2, 1fr);
   }
 
   #design {
@@ -580,7 +581,7 @@ main {
 
   .callme__container {
     margin-top: 5%;
-    align-items:  flex-end;
+    align-items: flex-end;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
