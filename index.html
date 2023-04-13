@@ -16,12 +16,13 @@
         <img src="./assets/logo.svg" alt="logo">
         <ul class="items text--black bg--white xs--d--flex w--fit"
           style="width: fit-content !important; position: relative; box-shadow: none;">
-          <li class="item"><a href="#" class="p--1 bg--black text--white rounded--xl">Free Consulation</a></li>
+          <li class="item"><a href="#" class="p--1 bg--black text--white rounded--xl" style="text-align: center;">Free
+              Consulation</a></li>
         </ul>
       </div>
     </nav>
-    <h1 class="d--flex f--direction--column items--center text--lg"><span>Design
-        solutions</span><span>made easy</span>
+    <h1 class="d--flex f--direction--column items--center text--lg"><span style="text-align: center;">Design
+        solutions</span><span style="text-align: center;">made easy</span>
     </h1>
     <p class="text--gray w--5-6 text--sm" style="text-align: center;">With over ten years of experience in various
       design
@@ -30,7 +31,7 @@
       your design needs.
     </p>
   </header>
-  <main>
+  <main class="d--flex f--direction--column items--center">
     <div class="cards h--50 gap--2 p--2">
       <article id="gd" class="rounded--sm d--flex items--end p--2">
         <h2 class="text--white text--md" style="text-transform: capitalize;">graphic design</h2>
@@ -44,14 +45,61 @@
       <article id="il" class="rounded--sm d--flex items--end p--2">
         <h2 class="text--white text--md" style="text-transform: capitalize;">illustrations</h2>
       </article>
-      <article id="ph">
-        <h2>photography</h2>
+      <article id="ph" class="rounded--sm d--flex items--end p--2">
+        <h2 class="text--white text--md" style="text-transform: capitalize;">photography</h2>
       </article>
-      <article id="mg">
-        <h2>motion graphics</h2>
+      <article id="mg" class="rounded--sm d--flex items--end p--2">
+        <h2 class="text--white text--md" style="text-transform: capitalize;">motion graphics</h2>
       </article>
     </div>
+    <section class="d--flex f--direction--column items--center"><img src="./assets/image-amy.webp" alt="amy"
+        class="w--5-6">
+      <h2 class="text--sm text--black" style="text-align: center;">I’m Amy, and I’d love to work on your next project
+      </h2>
+      <p class="text--gray p--1" style="text-align: center;">I love working with others to create beautiful design
+        solutions.
+        I’ve designed everything
+        from brand
+        illustrations to
+        complete mobile apps. I’m also handy with a camera!</p>
+      <a href="#" class="p--1 text--white bg--info--dark--2 rounded--xl">Free consulation</a>
+    </section>
+    <section class="d--flex f--direction--column items--center mt--5 mb--2">
+      <h2 style="text-transform: capitalize;" class="mb--2">my work</h2>
+      <div class="carousel__container" style="overflow: hidden;">
+        <div class="carousel__imgs d--flex gap--1">
+          <img src="./assets/image-slide-1.jpg" alt="image 1" class="carousel__item rounded--sm" />
+          <img src="./assets/image-slide-2.jpg" alt="image 2" class="carousel__item rounded--sm" />
+          <img src="./assets/image-slide-3.jpg" alt="image 3" class="carousel__item rounded--sm" />
+          <img src="./assets/image-slide-4.jpg" alt="image 4" class="carousel__item rounded--sm" />
+          <img src="./assets/image-slide-5.jpg" alt="image 5" class="carousel__item rounded--sm" />
+        </div>
+      </div>
+      <div class="d--flex justify--center gap--1 mt--1"><button id="carousel__arrow_right"
+          class="border--none bg--black text--white p--1 md--p--2" style="border-radius: 50%; cursor: pointer;">
+          <iconify-icon icon="material-symbols:arrow-back"></iconify-icon>
+        </button>
+        <button id="carousel__arrow_left" class="border--none bg--black text--white p--1 md--p--2"
+          style="border-radius: 50%; cursor: pointer;">
+          <iconify-icon icon="material-symbols:arrow-forward"></iconify-icon>
+        </button>
+      </div>
+    </section>
+    <section class="rounded--lg bg--black text--white p--1 d--flex f--direction--column items--center w--5-6">
+      <h2 class="m--2">Book a call with me</h2>
+      <p class="text--white--dark--2 w--5-6" style="text-align: center;">I’d love to have a chat to see how I can help
+        you. The best first step is for us
+        to discuss your project during a free
+        consultation. Then we can move forward from there.</p>
+      <a href="#" class="p--1 bg--info--dark--2 rounded--xl my--1">Free consulation</a>
+    </section>
   </main>
+  <footer class="my--3 d--flex items--center justify--space-between px--2">
+    <img src="./assets/logo.svg" alt="logo">
+    <ul>
+      <li><a href="#" class="p--1 bg--black text--white rounded--xl">Free consulation</a></li>
+    </ul>
+  </footer>
   <script type="module" src="/main.js"></script>
 </body>
 
