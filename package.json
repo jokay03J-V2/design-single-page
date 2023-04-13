@@ -13,7 +13,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
-    "@jokay03j-v2/sasslib": "^1.1.7",
+    "@jokay03j-v2/sasslib": "^1.2.1",
     "iconify-icon": "^1.0.7"
   }
 }
