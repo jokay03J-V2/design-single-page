@@ -49,3 +49,12 @@
   transition: all ease 1s;
 }
 
+@media screen and (min-width: 760px) {
+  .cards {
+    grid-template-areas:
+      "gd gd uiux apps"
+      "gd gd il il"
+      "ph ph mg mg";
+  }
+}
+
