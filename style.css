@@ -58,3 +58,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .cards {
+    grid-template-areas:
+      "gd gd uiux apps ph ph"
+      "gd gd il il mg mg";
+    height: 25rem !important;
+  }
+}
+
