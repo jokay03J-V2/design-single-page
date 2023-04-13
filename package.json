@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:host": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -12,6 +13,8 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
-    "@jokay03j-v2/sasslib": "^1.1.7"
+    "@jokay03j-v2/sasslib": "^1.1.7",
+    "iconify-icon": "^1.0.7"
   }
 }
+
