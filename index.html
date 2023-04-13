@@ -32,7 +32,7 @@
     </p>
   </header>
   <main class="d--flex f--direction--column items--center">
-    <div class="cards h--50 gap--2 p--2">
+    <div class="cards h--50 md--h--20 md--w--11-12 gap--2 p--2">
       <article id="gd" class="rounded--sm d--flex items--end p--2">
         <h2 class="text--white text--md" style="text-transform: capitalize;">graphic design</h2>
       </article>
@@ -52,22 +52,26 @@
         <h2 class="text--white text--md" style="text-transform: capitalize;">motion graphics</h2>
       </article>
     </div>
-    <section class="d--flex f--direction--column items--center"><img src="./assets/image-amy.webp" alt="amy"
-        class="w--5-6">
-      <h2 class="text--sm text--black" style="text-align: center;">I’m Amy, and I’d love to work on your next project
-      </h2>
-      <p class="text--gray p--1" style="text-align: center;">I love working with others to create beautiful design
-        solutions.
-        I’ve designed everything
-        from brand
-        illustrations to
-        complete mobile apps. I’m also handy with a camera!</p>
-      <a href="#" class="p--1 text--white bg--info--dark--2 rounded--xl">Free consulation</a>
+    <section class="d--flex f--direction--column items--center md--f--direction--row md--p--1">
+      <img src="./assets/image-amy.webp" alt="amy" class="w--5-6" style="float: left;">
+      <article class="d--flex f--direction--column items--left md--p--1">
+        <h2 class="text--sm text--black" style="text-align: center;">I’m Amy, and I’d love to work on your next project
+        </h2>
+        <p class="text--gray p--1 md--p--0 md--my--1" style="text-align: center;">I love working with others to create
+          beautiful
+          design
+          solutions.
+          I’ve designed everything
+          from brand
+          illustrations to
+          complete mobile apps. I’m also handy with a camera!</p>
+        <a href="#" class="p--1 text--white bg--info--dark--2 rounded--xl md--w--fit">Free consulation</a>
+      </article>
     </section>
     <section class="d--flex f--direction--column items--center mt--5 mb--2">
       <h2 style="text-transform: capitalize;" class="mb--2">my work</h2>
       <div class="carousel__container" style="overflow: hidden;">
-        <div class="carousel__imgs d--flex gap--1">
+        <div class="carousel__imgs d--flex gap--1 w--6-6">
           <img src="./assets/image-slide-1.jpg" alt="image 1" class="carousel__item rounded--sm" />
           <img src="./assets/image-slide-2.jpg" alt="image 2" class="carousel__item rounded--sm" />
           <img src="./assets/image-slide-3.jpg" alt="image 3" class="carousel__item rounded--sm" />
@@ -77,11 +81,11 @@
       </div>
       <div class="d--flex justify--center gap--1 mt--1"><button id="carousel__arrow_right"
           class="border--none bg--black text--white p--1 md--p--2" style="border-radius: 50%; cursor: pointer;">
-          <iconify-icon icon="material-symbols:arrow-back"></iconify-icon>
+          <iconify-icon icon="material-symbols:arrow-back" class="md--text--sm"></iconify-icon>
         </button>
         <button id="carousel__arrow_left" class="border--none bg--black text--white p--1 md--p--2"
           style="border-radius: 50%; cursor: pointer;">
-          <iconify-icon icon="material-symbols:arrow-forward"></iconify-icon>
+          <iconify-icon icon="material-symbols:arrow-forward" class="md--text--sm"></iconify-icon>
         </button>
       </div>
     </section>
