@@ -1,3 +1,7 @@
+* {
+  transition: all ease 1s;
+}
+
 .cards {
   display: grid;
   grid-template-areas:
@@ -30,6 +34,18 @@
 }
 
 #ph {
-  background-color: #61c4b7;
+  background: url(./assets/pattern-illustrations.svg) #61c4b7 90% 10% no-repeat;
   grid-area: ph;
 }
+
+#mg {
+  grid-area: mg;
+  background: url(./assets/pattern-motion-graphics.svg) #552049 90% 10%
+    no-repeat;
+}
+
+.carousel__container,
+.carousel__imgs {
+  transition: all ease 1s;
+}
+
