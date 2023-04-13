@@ -1,126 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="design page" />
-    <title>design page</title>
-  </head>
-  <body>
-    <nav class="navbar__container">
-      <img src="./assets/logo.svg" alt="logo" class="navbar__icon" />
-      <ul class="navbar__items">
-        <li class="navbar__item ui__button_black">
-          <a href="#" class="ui__link">free consultation</a>
-        </li>
-      </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="design page" />
+  <title>design page</title>
+</head>
+
+<body>
+  <header class="d--flex f--direction--column items--center">
+    <nav class="navbar--white text--black mb-4" style="box-shadow: none;">
+      <div class="container">
+        <img src="./assets/logo.svg" alt="logo">
+        <ul class="items text--black bg--white xs--d--flex w--fit"
+          style="width: fit-content !important; position: relative; box-shadow: none;">
+          <li class="item"><a href="#" class="p--1 bg--black text--white rounded--xl">Free Consulation</a></li>
+        </ul>
+      </div>
     </nav>
-    <header class="header">
-      <h1 class="header__title">
-        <span>design solutions</span><span>made easy</span>
-      </h1>
-      <p class="header__subtitle">
-        with over ten years of experience in various design disciplines, I'm
-        your one-stop shop for your design needs.
-      </p>
-    </header>
-    <main>
-      <div class="cards__container">
-        <article class="cards__card" id="design">
-          <h2 class="cards__card__title">graphic design</h2>
-        </article>
-        <article class="cards__card" id="ui_ux">
-          <h2 class="cards__card__title">ui/ux</h2>
-        </article>
-        <article class="cards__card" id="apps">
-          <h2 class="cards__card__title">apps</h2>
-        </article>
-        <article class="cards__card" id="illustrations">
-          <h2 class="cards__card__title">illustrations</h2>
-        </article>
-        <article class="cards__card" id="photography">
-          <h2 class="cards__card__title">photography</h2>
-        </article>
-        <article class="cards__card" id="motion_graphics">
-          <h2 class="cards__card__title">motion graphics</h2>
-        </article>
-      </div>
-      <article class="welcome__container">
-        <img src="./assets/image-amy.webp" alt="avatar" class="avatar__img" />
-        <h2 class="welcome__title">
-          i’m Amy, and I’d love to work on your next project
-        </h2>
-        <p class="welcome__paragraph">
-          i love working with others to create beautiful design solutions. I’ve
-          designed everything from brand illustrations to complete mobile apps.
-          I’m also handy with a camera!
-        </p>
-        <a href="#" class="ui__button_light_red welcome__button"
-          >free consultation</a
-        >
+    <h1 class="d--flex f--direction--column items--center text--lg"><span>Design
+        solutions</span><span>made easy</span>
+    </h1>
+    <p class="text--gray w--5-6 text--sm" style="text-align: center;">With over ten years of experience in various
+      design
+      disciplines,
+      I’m your one-stop shop for
+      your design needs.
+    </p>
+  </header>
+  <main>
+    <div class="cards h--50 gap--2 p--2">
+      <article id="gd" class="rounded--sm d--flex items--end p--2">
+        <h2 class="text--white text--md" style="text-transform: capitalize;">graphic design</h2>
       </article>
-      <h2 class="work__title">my work</h2>
-      <div class="carousel__container">
-        <div class="carousel__imgs">
-          <img
-            src="./assets/image-slide-1.jpg"
-            alt="image 1"
-            id="carousel__item1"
-            class="carousel__item"
-          />
-          <img
-            src="./assets/image-slide-2.jpg"
-            alt="image 2"
-            id="carousel__item2"
-            class="carousel__item"
-          />
-          <img
-            src="./assets/image-slide-3.jpg"
-            alt="image 3"
-            id="carousel__item3"
-            class="carousel__item"
-          />
-          <img
-            src="./assets/image-slide-4.jpg"
-            alt="image 4"
-            class="carousel__item"
-          />
-          <img
-            src="./assets/image-slide-5.jpg"
-            alt="image 5"
-            class="carousel__item"
-          />
-        </div>
-      </div>
-      <div class="carousel__controls">
-        <button
-          href="#carousel__item1"
-          class="ui__small_button_black"
-          id="carousel__arrow_right"
-        ></button>
-        <button
-          class="ui__small_button_black"
-          id="carousel__arrow_left"
-          href="#carousel__item3"
-        ></button>
-      </div>
-      <article class="callme__container">
-        <h3 class="callme__title">book call with me</h3>
-        <p class="callme__paragraph">
-          I’d love to have a chat to see how I can help you. The best first step
-          is for us to discuss your project during a free consultation. Then we
-          can move forward from there.
-        </p>
-        <a href="#" class="ui__button_light_red callme__button">
-          free consultation
-        </a>
+      <article id="ui_ux" class="rounded--sm d--flex items--end p--2">
+        <h2 class="text--white text--md" style="text-transform: uppercase;">ui/ux</h2>
       </article>
-    </main>
-    <footer class="footer">
-      <img src="./assets/logo.svg" />
-      <a href="#" class="ui__button_black">free consultation</a>
-    </footer>
-    <script type="module" src="/main.js"></script>
-  </body>
+      <article id="apps" class="rounded--sm d--flex items--end p--2">
+        <h2 class="text--white text--md" style="text-transform: capitalize;">apps</h2>
+      </article>
+      <article id="il" class="rounded--sm d--flex items--end p--2">
+        <h2 class="text--white text--md" style="text-transform: capitalize;">illustrations</h2>
+      </article>
+      <article id="ph">
+        <h2>photography</h2>
+      </article>
+      <article id="mg">
+        <h2>motion graphics</h2>
+      </article>
+    </div>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

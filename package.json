@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@jokay03j-v2/sasslib": "^1.1.7"
   }
 }
